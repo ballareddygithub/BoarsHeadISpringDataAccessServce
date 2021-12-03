@@ -3,4 +3,4 @@ springdoc.swagger-ui.path: /api/swagger-ui-dataaccess.html
 server:
   port: 8083
   
-ispring.api.url: 
+ispring.api.url: https://api-learn.ispringlearn.com
