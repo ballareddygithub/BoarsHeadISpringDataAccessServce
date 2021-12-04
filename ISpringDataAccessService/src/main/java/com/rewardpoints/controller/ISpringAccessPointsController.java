@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Inject;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -31,7 +33,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @CrossOrigin
 public class ISpringAccessPointsController {
 
-	@Autowired
+	@Inject
 	private ISpringAccessPointsService iSpringAccessPointsService;
 	
 	@Operation(summary="getAllUsersAndPointsFromISpring",description="API to fetch a single User")

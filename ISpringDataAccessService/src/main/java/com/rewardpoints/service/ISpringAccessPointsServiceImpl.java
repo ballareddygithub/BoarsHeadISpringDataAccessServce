@@ -3,6 +3,7 @@ package com.rewardpoints.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class ISpringAccessPointsServiceImpl implements ISpringAccessPointsServic
 	@Value("${ispring.api.url}")
 	private String ispringApiUrl;
 
-	@Autowired
+	@Inject
 	private RestTemplate restTemplate;
 	
 	@Override
